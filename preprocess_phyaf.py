@@ -13,8 +13,6 @@ import scipy
 from python_speech_features import mfcc, logfbank, delta
 from sklearn.preprocessing import MinMaxScaler
 
-s = np.load('s.npy')
-
 def statistical_features(s):
     return [np.mean(s), np.std(s), scipy.stats.entropy(s)]
 
